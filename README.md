@@ -162,15 +162,7 @@ isort . --virtual-env dspioenv
 ```
 
 ## PROJECT SCOPE
-Le model de base de ce project et le pointnet, visible sur  [Github Pointnet](https://github.com/charlesq34/pointnet) ,on utilise 4 algorithme de base pour genere le recommendation:
-* # Algorithme Populaire : 
-base sur les articles le plus populaire
-* # Algorithme Similarity:
-base sur les articles le plus similaire
-* # Algorithme Contenu:
-base sur le contenu
-* # Algorithme hybrid:
-combinaison de articles similaire et le contenu
+Le model de base de ce project et le pointnet, visible sur  [Github Pointnet](https://github.com/charlesq34/pointnet)
 
 ## Exemple and Integration
-![datascience_pio](https://github.com/anjaragit/ML_VR3D/blob/main/MAS.gif)
+![](https://github.com/anjaragit/ML_VR3D/blob/main/MAS.gif)
