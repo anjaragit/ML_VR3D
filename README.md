@@ -173,4 +173,4 @@ base sur le contenu
 combinaison de articles similaire et le contenu
 
 ## Exemple and Integration
-![datascience_pio](/home/herilala/Vidéos/MAS.gif)
+![datascience_pio](https://github.com/anjaragit/ML_VR3D/blob/main/MAS.gif)
