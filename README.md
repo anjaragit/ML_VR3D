@@ -162,7 +162,7 @@ isort . --virtual-env dspioenv
 ```
 
 ## PROJECT SCOPE
-Dans ce projet ,on utilise 4 algorithme de base pour genere le recommendation:
+Le model de base de ce project et le pointnet, visible sur  [](https://github.com/charlesq34/pointnet) ,on utilise 4 algorithme de base pour genere le recommendation:
 * # Algorithme Populaire : 
 base sur les articles le plus populaire
 * # Algorithme Similarity:
