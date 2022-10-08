@@ -20,16 +20,14 @@ minute , vous avez fait le travail de plus de dizaine de dessineur.
 ├── config                       <- Directory containing configuration files
 ├── README.md                 <- The top-level README for developers using this project.
 ├── dataset                   <- Sample data from different sources for unit and integration tests
-│   ├── external              <- Data from third party sources.
-│   └── raw                   <- The original, immutable data dump.
+│   ├── LasFile              <- Data filter
+│   └── PointCloud                   <- The original data.
 │
 ├── docs               
 │
 ├── models                    <- Trained and serialized models, model predictions, or model summaries
 │
 ├── notebooks                 <- Jupyter notebooks. 
-│
-├── schema                    <- PartsIO Json Schema
 │
 ├── reports                   <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures               <- Generated graphics and figures to be used in reporting
@@ -39,7 +37,7 @@ minute , vous avez fait le travail de plus de dizaine de dessineur.
 │
 ├── setup.py                  <- Make this project pip installable with `pip install -e`
 ├── tests                     <- The pytest tests root directory for unit / integration / e2e tests
-├── src/datascience_pio                
+├── src/ML_VR3D                
 │   ├── __init__.py    
 │   │
 │   ├── util                  <- Scripts with common processing
@@ -47,31 +45,17 @@ minute , vous avez fait le travail de plus de dizaine de dessineur.
 │   ├── data                  <- Scripts to download or generate data
 |   |   ├── __init__.py    
 │   │   └── common 
-|   |   |   |_ s3.py          <- script containes aws/s3 related operations to read data if needed
-|   |   |   |_ pio_articles.py     <- contains pio articles intermidiate dataframe specification builder
-│   │   └── kromeda             <- kromeda provider related readers 
-|   |       |_ articles.py    <- script to read and map kromeda articles to pio Intermediate dataframe       
+|   |   |   |_ Labelisation.py          <- script labelize automaticaly data
+│   │   └── H5_file             <- Transform xyz value to H5 and extracte new feature       
 │   │
-│   ├── process               <- Scripts to process pio intermidiate dataframes
-|   |   ├── __init__.py    
-│   │   └── catalog           <- model mapping scripts pio intermidiate dataframe to pio model
-|   |       |_ build_articles.py  <- build articles
-│   │   └── matching              <- matching scripts 
-|   |       |_ match_vehicles_kromeda_tecdoc.py  <- script convert pio intermidiate dataframe to pio categories model
 │   │
 │   ├── iamodels              <- Scripts to train IA models and then use trained models to make
 │   │   │                       predictions
 |   |   ├── __init__.py    
 │   │   ├── predict_model.py
 │   │   └── train_model.py
-│   ├── record                <- Scripts to write pio data into storage engines
-|   |   ├── __init__.py    
-│   │   ├── mongodb           <- directory for scripts to write pio objects to MongoDB
-│   │   └── elasticsearch     <- directory for scripts to write Elasticsearch objects to MongoDB
 │   └── visualization         <- Scripts to create exploratory and results oriented visualizations
 │       └── visualize.py
-│
-└── tox.ini                   <- tox file with settings for running tox; see tox.testrun.org
 ```
 
 
